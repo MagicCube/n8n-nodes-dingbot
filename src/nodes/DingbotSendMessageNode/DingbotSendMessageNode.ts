@@ -1,9 +1,7 @@
 import type {
   IExecuteFunctions,
   INodeExecutionData,
-  INodeParameters,
   INodeType,
-  INodeTypeDescription,
 } from 'n8n-workflow';
 import {
   ActionCard as ActionCardMessage,
