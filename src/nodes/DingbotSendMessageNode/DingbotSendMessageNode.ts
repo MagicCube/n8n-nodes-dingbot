@@ -1,4 +1,5 @@
 import type {
+  ICredentialType,
   IExecuteFunctions,
   INodeExecutionData,
   INodeType,
@@ -12,10 +13,10 @@ import {
   Text as TextMessage,
 } from 'ts-dingtalk-robot';
 
-import { description } from './description';
+import * as metadata from './metadata';
 
 export class DingbotSendMessageNode implements INodeType {
-  description = description;
+  description = metadata.description;
 
   async execute(
     this: IExecuteFunctions
