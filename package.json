@@ -1,0 +1,30 @@
+{
+  "name": "n8n-nodes-dingbot",
+  "version": "1.0.0",
+  "description": "Dingtalk robot nodes for N8N.",
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "nodes": [
+      "dist/nodes/DingbotSendMessageNode/DingbotSendMessageNode.js"
+    ]
+  },
+  "author": "Henry Li <henry.li@alibaba-inc.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "npm run watch",
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean && tsc --watch"
+  },
+  "dependencies": {
+    "n8n-core": "^0.100.0",
+    "n8n-workflow": "^0.82.0",
+    "ts-dingtalk-robot": "^1.0.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  }
+}
