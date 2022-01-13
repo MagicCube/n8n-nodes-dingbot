@@ -69,7 +69,7 @@ export class DingbotSendMessageNode implements INodeType {
             throw new Error(`Unsupported message type: ${messageType}`);
         }
 
-        // item.json['message'] = message.get() as any;
+        item.json['dingbotMessage'] = message.get() as any;
 
         return message;
       });
