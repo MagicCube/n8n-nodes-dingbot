@@ -11,6 +11,13 @@
     ]
   },
   "author": "Henry Li <henry.li@alibaba-inc.com>",
+  "keywords": [
+    "n8n",
+    "dingbot",
+    "dingtalk",
+    "robot",
+    "dingtalk robot"
+  ],
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
