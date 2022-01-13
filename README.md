@@ -11,3 +11,7 @@ Dingbot is a [DingTalk](https://dingtalk.com/) bot that can be used to send noti
 ```sh
 npm install n8n-nodes-dingbot
 ```
+
+## Screenshot
+
+![Settings page](https://raw.githubusercontent.com/MagicCube/n8n-nodes-dingbot/master/screenshots/01.png)
