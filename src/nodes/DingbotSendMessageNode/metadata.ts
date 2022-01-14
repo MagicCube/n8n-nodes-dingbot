@@ -1,4 +1,4 @@
-import type { INodeProperties, INodeTypeDescription, NodePropertyTypes } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'n8n-workflow';
 
 export const description: INodeTypeDescription = {
   displayName: 'Dingbot - Send Message',

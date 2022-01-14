@@ -1,5 +1,5 @@
 import type {
-  ICredentialType,
+  IDataObject,
   IExecuteFunctions,
   INodeExecutionData,
   INodeType,
@@ -69,13 +69,13 @@ export class DingbotSendMessageNode implements INodeType {
             throw new Error(`Unsupported message type: ${messageType}`);
         }
 
-        item.json['dingbotMessage'] = message.get() as any;
+        item.json['dingbotMessage'] = message.get() as unknown as IDataObject;
 
         return message;
       });
 
       const accessToken = this.getNodeParameter('accessToken', 0) as string;
-      let secret = this.getNodeParameter('secret', 0) as string | undefined;
+      const secret = this.getNodeParameter('secret', 0) as string | undefined;
       const dingbotClient = new DingbotClient({
         accessToken,
         secret: secret ? secret : undefined,
